@@ -1,12 +1,25 @@
-﻿<Window x:Class="FileExplorer.MainWindow"
+﻿<Window x:Class="FileExplorer.Terminal.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:FileExplorer"
+xmlns:control="clr-namespace:FileExplorer.MVVM;assembly=FileExplorer.MVVM"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+       xmlns:pt="http://propertytools.org/wpf"
+        Title="DirectoryDemo" Height="480" Width="480">
+
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <control:MultiSelectTreeView  ItemsSource="{Binding RootDirectories}"  SelectedItems="{Binding SelectedItems,Mode=OneWayToSource}"/>
+      
+        <ListBox Grid.Column="1" ItemsSource="{Binding Files}" BorderThickness="1 0 0 0"/>
     </Grid>
+
+       
+
 </Window>

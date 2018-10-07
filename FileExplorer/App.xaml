@@ -4,6 +4,16 @@
              xmlns:local="clr-namespace:FileExplorer"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+
+            <ResourceDictionary>
+
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="/FileExplorer.MVVM;component/View/DirectoryDataTemplate.xaml"/>
+                <ResourceDictionary Source="/FileExplorer.MVVM;component/View/TreeViewStyle.xaml"/>
+                <ResourceDictionary Source="/FileExplorer.MVVM;component/View/FileDataTemplate.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
+   
     </Application.Resources>
 </Application>
