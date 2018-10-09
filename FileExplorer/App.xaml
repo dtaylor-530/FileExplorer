@@ -9,8 +9,7 @@
             <ResourceDictionary>
 
                 <ResourceDictionary.MergedDictionaries>
-                    <ResourceDictionary Source="/FileExplorer.MVVM;component/View/DirectoryDataTemplate.xaml"/>
-                <ResourceDictionary Source="/FileExplorer.MVVM;component/View/TreeViewStyle.xaml"/>
+                <ResourceDictionary Source="/FileExplorer.MVVM;component/View/DirectoryDataTemplate.xaml"/>
                 <ResourceDictionary Source="/FileExplorer.MVVM;component/View/FileDataTemplate.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             </ResourceDictionary>

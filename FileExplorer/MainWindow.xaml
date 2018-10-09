@@ -12,11 +12,9 @@ xmlns:control="clr-namespace:FileExplorer.MVVM;assembly=FileExplorer.MVVM"
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
-            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <control:MultiSelectTreeView  ItemsSource="{Binding RootDirectories}"  SelectedItems="{Binding SelectedItems,Mode=OneWayToSource}"/>
-      
         <ListBox Grid.Column="1" ItemsSource="{Binding Files}" BorderThickness="1 0 0 0"/>
     </Grid>
 

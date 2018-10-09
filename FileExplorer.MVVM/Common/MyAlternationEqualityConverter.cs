@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 
+
+
 namespace FileExplorer.MVVM
 {
+    //http://wpf-mettyz.blogspot.com/2012/02/custom-treeview-style.html
     public class MyAlternationEqualityConverter : IMultiValueConverter
   {
     #region Implementation of IMultiValueConverter

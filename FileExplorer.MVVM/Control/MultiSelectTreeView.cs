@@ -21,7 +21,7 @@ namespace FileExplorer.MVVM
         public MultiSelectTreeView()
         {
 
-            Uri resourceLocater = new Uri("/FileExplorer.MVVM;component/View/TreeViewStyle.xaml", System.UriKind.Relative);
+            Uri resourceLocater = new Uri("/FileExplorer.MVVM;component/Themes/MultiSelectTreeView.xaml", System.UriKind.Relative);
             ResourceDictionary resourceDictionary = (ResourceDictionary)Application.LoadComponent(resourceLocater);
             Style = resourceDictionary["MultiSelectTreeViewStyle"] as Style;
 
