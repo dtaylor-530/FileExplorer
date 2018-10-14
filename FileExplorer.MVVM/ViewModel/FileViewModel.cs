@@ -169,7 +169,7 @@ public class FileViewModel :PathViewModel
     public class DirectoryViewModel:PathViewModel
     {
 
-        public DirectoryViewModel(string path, Func<string, string> map = null):base(path, map ?? ((a) => System.IO.Path.GetDirectoryName(a)))
+        public DirectoryViewModel(string path, Func<string, string> map = null):base(path, map ?? ((a) => Path.GetFileNameWithoutExtension(a)))
         {
 
         }
