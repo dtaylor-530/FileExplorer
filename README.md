@@ -10,4 +10,4 @@ With the property SelectedItems we can bind the multiple selected items to a pro
 We can define the style of a multiple selected TreeViewItem within a Style Trigger.
 </blockquote>
 
-![alt text](https://github.com/dtaylor-530/FileExplorer/SnapShot.png "Snapshot of program")
+![alt text](https://github.com/dtaylor-530/FileExplorer/blob/master/SnapShot.png "Snapshot of program")
